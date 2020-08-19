@@ -25,7 +25,16 @@
     margin: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+}
 
+.markerjs-toolbar-left {
+    background-color: #cccccc;
+    padding: 0px 5px;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: grid;
     grid-template-columns: repeat(20, auto);
 }

@@ -32,7 +32,7 @@ import { LineMarker } from './markers/line/LineMarker';
 import { ArrowMarker } from './markers/arrow/ArrowMarker';
 import {NewMarkerToolbarItem} from "./markers/new/NewMarkerToolbarItem";
 
-export class MarkerArea {
+export class MarkerLeftSideArea {
     private target: HTMLImageElement;
 
     private targetRoot: HTMLElement;

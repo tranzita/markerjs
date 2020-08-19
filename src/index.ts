@@ -1,5 +1,6 @@
 export { Activator } from "./Activator";
 export { MarkerArea } from "./MarkerArea";
+export { MarkerLeftSideArea } from "./MarkerLeftSideArea";
 
 export { ArrowMarker } from "./markers/arrow/ArrowMarker";
 export { CoverMarker } from "./markers/cover/CoverMarker";
