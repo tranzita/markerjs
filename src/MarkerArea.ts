@@ -31,6 +31,16 @@ import { TextMarker } from './markers/text/TextMarker';
 import { LineMarker } from './markers/line/LineMarker';
 import { ArrowMarker } from './markers/arrow/ArrowMarker';
 import {NewMarkerToolbarItem} from "./markers/new/NewMarkerToolbarItem";
+import {ZeroMarkerToolbarItem} from "./markers/NumberSystem/Zero/ZeroMarkerToolbarItem";
+import {OneMarkerToolbarItem} from "./markers/NumberSystem/One/OneMarkerToolbarItem";
+import {TwoMarkerToolbarItem} from "./markers/NumberSystem/Two/TwoMarkerToolbarItem";
+import {ThreeMarkerToolbarItem} from "./markers/NumberSystem/Three/ThreeMarkerToolbarItem";
+import {FourMarkerToolbarItem} from "./markers/NumberSystem/Four/FourMarkerToolbarItem";
+import {SixMarkerToolbarItem} from "./markers/NumberSystem/Six/SixMarkerToolbarItem";
+import {SevenMarkerToolbarItem} from "./markers/NumberSystem/Seven/SevenMarkerToolbarItem";
+import {FiveMarkerToolbarItem} from "./markers/NumberSystem/Five/FiveMarkerToolbarItem";
+import {EightMarkerToolbarItem} from "./markers/NumberSystem/Eight/EightMarkerToolbarItem";
+import {NineMarkerToolbarItem} from "./markers/NumberSystem/Nine/NineMarkerToolbarItem";
 
 export class MarkerArea {
     private target: HTMLImageElement;
@@ -79,9 +89,23 @@ export class MarkerArea {
             name: "separator",
             tooltipText: "",
         },
+        new ZeroMarkerToolbarItem(),
+        new OneMarkerToolbarItem(),
+        new TwoMarkerToolbarItem(),
+        new ThreeMarkerToolbarItem(),
+        new FourMarkerToolbarItem(),
+        new FiveMarkerToolbarItem(),
+        new SixMarkerToolbarItem(),
+        new SevenMarkerToolbarItem(),
+        new EightMarkerToolbarItem(),
+        new NineMarkerToolbarItem(),
+
+        {
+            name: "separator",
+            tooltipText: "",
+        },
+
         new NewMarkerToolbarItem(),
-        new RectMarkerToolbarItem(),
-        new RectMarkerToolbarItem(),
         new RectMarkerToolbarItem(),
         new EllipseMarkerToolbarItem(),
         new CoverMarkerToolbarItem(),
