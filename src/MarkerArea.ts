@@ -454,6 +454,7 @@ export class MarkerArea {
                 stroke: ${this.markerColors.mainColor};
                 stroke-width: ${this.strokeWidth};
                 fill: transparent;
+                
             }
             .markerjs-rect-control-box .markerjs-rect-control-rect {
                 stroke: black;

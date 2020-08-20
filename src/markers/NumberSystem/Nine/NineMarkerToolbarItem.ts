@@ -6,7 +6,6 @@ import Icon from "./nine-marker-toolbar-icon.svg";
 export class NineMarkerToolbarItem implements ToolbarItem {
     public name = "nine-marker";
     public tooltipText = "Nine";
-
     public icon = Icon;
     public markerType = NineMarker;
 }
