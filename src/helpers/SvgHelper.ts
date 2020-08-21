@@ -175,10 +175,14 @@ export class SvgHelper {
         d: number | string,
         attributes?: Array<[string, string]>,
     ): SVGPathElement => {
-        const OneNumber = document.createElementNS("http://www.w3.org/2000/svg", "path");
-
-        // test.setAttribute("d", d.toString());
-        OneNumber.setAttribute("d", "\"M3445 12403 c-603 -49 -1043 -156 -1471 -358 -581 -274 -1041 -698\n" +
+        const TwoNumber = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        // width="25" height="25" viewBox="0 0 810.000000 1280.000000"
+        // preserveAspectRatio="xMidYMid meet"
+        TwoNumber.setAttribute("width", "25");
+        TwoNumber.setAttribute("height", "25");
+        TwoNumber.setAttribute("viewBox", "0 0 25.000000 25.000000");
+        TwoNumber.setAttribute("preserveAspectRatio", "xMidYMid meet");
+        TwoNumber.setAttribute("d", "M3445 12403 c-603 -49 -1043 -156 -1471 -358 -581 -274 -1041 -698\n" +
             "-1289 -1188 -146 -289 -219 -588 -232 -942 -19 -539 124 -953 437 -1265 194\n" +
             "-194 412 -311 693 -372 138 -30 484 -33 619 -5 263 53 486 170 666 348 227\n" +
             "225 340 462 373 782 43 426 -125 829 -430 1031 -36 24 -198 103 -360 176 -162\n" +
@@ -192,13 +196,13 @@ export class SvgHelper {
             "l-1783 0 7 28 c22 91 169 383 287 572 250 399 666 844 1149 1231 298 239 521\n" +
             "394 964 669 826 512 1176 750 1581 1074 567 452 884 819 1123 1296 245 491\n" +
             "354 1007 338 1610 -6 239 -21 379 -63 579 -174 844 -721 1532 -1559 1962 -484\n" +
-            "249 -1031 392 -1680 439 -126 9 -700 12 -800 3z\"");
+            "249 -1031 392 -1680 439 -126 9 -700 12 -800 3z");
         if (attributes) {
-            // SvgHelper.setAttributes(OneNumber, attributes);
-            SvgHelper.createGroup(attributes);
+            SvgHelper.setAttributes(TwoNumber, attributes);
+            // SvgHelper.createGroup(attributes);
         }
 
-        return OneNumber;
+        return TwoNumber;
     }
 
 }

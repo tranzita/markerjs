@@ -1,12 +1,12 @@
 import {SvgHelper} from "../../helpers/SvgHelper";
-import {TestMarkerBase} from "../TestMarkerBase";
+import {TwoMarkerBase} from "../TwoMarkerBase";
 
-export class TwoMarker extends TestMarkerBase {
-    public static createMarker = (): TestMarkerBase => {
+export class TwoMarker extends TwoMarkerBase {
+    public static createMarker = (): TwoMarkerBase => {
         const marker = new TwoMarker();
         marker.setup();
         return marker;
-    }
+    };
 
     constructor() {
         super();
@@ -15,7 +15,10 @@ export class TwoMarker extends TestMarkerBase {
 
     protected setup() {
         super.setup();
-        SvgHelper.setAttributes(this.visual, [["class", "test-marker"]]);
+        SvgHelper.setAttributes(this.visual, [["class", "two-marker"]]);
+        // SvgHelper.setAttributes(this.visual,
+        //     [["transform", "translate(0.000000,1280.000000) scale(0.100000,-0.100000)"],
+        //         ["fill", "#000000"], ["stroke", "none"]]);
     }
 
 }

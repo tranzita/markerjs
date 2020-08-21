@@ -2,20 +2,20 @@ import {SvgHelper} from "../helpers/SvgHelper";
 import {RectangularMarkerGrips} from "./RectangularMarkerGrips";
 import {TestangularMarkerBase} from "./TestangularMarkerBase";
 
-export class TestMarkerBase extends TestangularMarkerBase {
-    public static createMarker = (): TestMarkerBase => {
-        const marker = new TestMarkerBase();
+export class TwoMarkerBase extends TestangularMarkerBase {
+    public static createMarker = (): TwoMarkerBase => {
+        const marker = new TwoMarkerBase();
         marker.setup();
         return marker;
-    }
+    };
 
     private markerTwo: SVGPathElement;
 
     protected setup() {
         super.setup();
 
-        this.markerTwo = SvgHelper.createTwoNumber(this.d, [["transform", "translate(0.000000,1280.000000) scale(0.100000,-0.100000)"],
-            ["fill", "#000000"], ["stroke", "none"]]);
+        this.markerTwo = SvgHelper.createTwoNumber(this.d, [["transform", "translate(0.000000,500.000000) scale(0.0100000,-0.0100000)"],
+            ["fill", "#bc1414"], ["stroke", "none"]]);
         this.addToRenderVisual(this.markerTwo);
     }
 

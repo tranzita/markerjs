@@ -3,9 +3,9 @@ import { TwoMarker } from "./TwoMarker";
 
 import Icon from "./NumberTwoIcon.svg";
 
-export class OneMarkerToolbarItem implements ToolbarItem {
+export class TwoMarkerToolbarItem implements ToolbarItem {
     public name = "rect-marker";
-    public tooltipText = "Rectangle";
+    public tooltipText = "NumberTwo";
 
     public icon = Icon;
     public markerType = TwoMarker;

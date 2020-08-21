@@ -1,5 +1,7 @@
 import {Activator} from "./Activator";
 import {SvgHelper} from "./helpers/SvgHelper";
+import {TwoMarker} from "./markers/numberTwo/TwoMarker";
+import {TwoMarkerToolbarItem} from "./markers/numberTwo/TwoMarkerToolbarItem";
 import {Renderer} from "./Renderer";
 import {Toolbar} from "./toolbar/Toolbar";
 import {ToolbarItem} from "./toolbar/ToolbarItem";
@@ -85,6 +87,7 @@ export class MarkerArea {
         new EllipseMarkerToolbarItem(),
         new CoverMarkerToolbarItem(),
         new OneMarkerToolbarItem(),
+        new TwoMarkerToolbarItem(),
         {
             name: "separator",
             tooltipText: "",
