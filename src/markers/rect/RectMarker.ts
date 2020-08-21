@@ -10,7 +10,7 @@ export class RectMarker extends RectMarkerBase {
 
     constructor() {
         super();
-        this.markerTypeName = 'RectMarker';
+        this.markerTypeName = "RectMarker";
     }
 
     protected setup() {

@@ -1,5 +1,5 @@
-import { SvgHelper } from "../../helpers/SvgHelper";
-import { LineMarkerBase } from "../LineMarkerBase";
+import {SvgHelper} from "../../helpers/SvgHelper";
+import {LineMarkerBase} from "../LineMarkerBase";
 
 export class ArrowMarker extends LineMarkerBase {
     public static createMarker = (): LineMarkerBase => {
@@ -8,12 +8,12 @@ export class ArrowMarker extends LineMarkerBase {
         return marker;
     }
 
+    private readonly ARROW_SIZE = 6;
+
     constructor() {
         super();
-        this.markerTypeName = 'ArrowMarker';
-    }    
-
-    private readonly ARROW_SIZE = 6;
+        this.markerTypeName = "ArrowMarker";
+    }
 
     protected setup() {
         super.setup();

@@ -8,12 +8,12 @@ export class EllipseMarker extends RectangularMarkerBase {
         return marker;
     }
 
+    private markerEllipse: SVGEllipseElement;
+
     constructor() {
         super();
-        this.markerTypeName = 'EllipseMarker';
+        this.markerTypeName = "EllipseMarker";
     }
-
-    private markerEllipse: SVGEllipseElement;
 
     protected setup() {
         this.height = this.width; // circle by default

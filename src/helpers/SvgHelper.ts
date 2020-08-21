@@ -157,4 +157,18 @@ export class SvgHelper {
         return tspan;
     }
 
+    public static createTest = (
+        d: number | string,
+        attributes?: Array<[string, string]>,
+    ): SVGPathElement => {
+        const test = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+        test.setAttribute("d", d.toString());
+        if (attributes) {
+            SvgHelper.setAttributes(test, attributes);
+        }
+
+        return test;
+    }
+
 }

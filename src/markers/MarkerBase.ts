@@ -18,6 +18,7 @@ export class MarkerBase {
     public defs: SVGElement[] = [];
 
     protected width: number = 200;
+    protected d: string = "";
     protected height: number = 50;
 
     protected isActive: boolean = true;

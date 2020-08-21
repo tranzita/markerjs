@@ -10,7 +10,7 @@ export class LineMarker extends LineMarkerBase {
 
     constructor() {
         super();
-        this.markerTypeName = 'LineMarker';
+        this.markerTypeName = "LineMarker";
     }
 
     protected setup() {
