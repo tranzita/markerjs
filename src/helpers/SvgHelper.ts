@@ -163,7 +163,8 @@ export class SvgHelper {
     ): SVGPathElement => {
         const test = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-        test.setAttribute("d", d.toString());
+        // test.setAttribute("d", d.toString());
+        test.setAttribute("d", "M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z");
         if (attributes) {
             SvgHelper.setAttributes(test, attributes);
         }
