@@ -1,4 +1,4 @@
-import { SvgHelper } from "./../helpers/SvgHelper";
+import { SvgHelper } from "../helpers/SvgHelper";
 import { MarkerBase } from "./MarkerBase";
 import { RectangularMarkerGrips } from "./RectangularMarkerGrips";
 import { ResizeGrip } from "./ResizeGrip";

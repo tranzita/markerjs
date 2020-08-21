@@ -3,9 +3,9 @@ import { MarkerBase } from "./MarkerBase";
 import { RectangularMarkerGrips } from "./RectangularMarkerGrips";
 import { ResizeGrip } from "./ResizeGrip";
 
-export class RectangularMarkerBase extends MarkerBase {
-    public static createMarker = (): RectangularMarkerBase => {
-        const marker = new RectangularMarkerBase();
+export class TestangularMarkerBase extends MarkerBase {
+    public static createMarker = (): TestangularMarkerBase => {
+        const marker = new TestangularMarkerBase();
         marker.setup();
         return marker;
     }

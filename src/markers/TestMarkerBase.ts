@@ -1,10 +1,10 @@
 import {SvgHelper} from "../helpers/SvgHelper";
 import { RectangularMarkerGrips } from "./RectangularMarkerGrips";
-import { RectangularMarkerBase } from "./TestangularMarkerBase";
+import { TestangularMarkerBase } from "./TestangularMarkerBase";
 
-export class RectMarkerBase extends RectangularMarkerBase {
-    public static createMarker = (): RectMarkerBase => {
-        const marker = new RectMarkerBase();
+export class TestMarkerBase extends TestangularMarkerBase {
+    public static createMarker = (): TestMarkerBase => {
+        const marker = new TestMarkerBase();
         marker.setup();
         return marker;
     }

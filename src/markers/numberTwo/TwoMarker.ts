@@ -1,16 +1,16 @@
 import {SvgHelper} from "../../helpers/SvgHelper";
 import {TestMarkerBase} from "../TestMarkerBase";
 
-export class OneMarker extends TestMarkerBase {
+export class TwoMarker extends TestMarkerBase {
     public static createMarker = (): TestMarkerBase => {
-        const marker = new OneMarker();
+        const marker = new TwoMarker();
         marker.setup();
         return marker;
     }
 
     constructor() {
         super();
-        this.markerTypeName = "TestMarker";
+        this.markerTypeName = "TwoMarker";
     }
 
     protected setup() {
