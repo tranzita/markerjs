@@ -6,7 +6,7 @@ export class ArrowMarker extends LineMarkerBase {
         const marker = new ArrowMarker();
         marker.setup();
         return marker;
-    }
+    };
 
     private readonly ARROW_SIZE = 6;
 

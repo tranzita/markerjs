@@ -1,5 +1,6 @@
 import {Activator} from "./Activator";
 import {SvgHelper} from "./helpers/SvgHelper";
+import {CrossMarkerToolbarItem} from "./markers/cross/CrossMarkerToolbarItem";
 import {TwoMarker} from "./markers/numberTwo/TwoMarker";
 import {TwoMarkerToolbarItem} from "./markers/numberTwo/TwoMarkerToolbarItem";
 import {Renderer} from "./Renderer";
@@ -88,6 +89,7 @@ export class MarkerArea {
         new CoverMarkerToolbarItem(),
         new OneMarkerToolbarItem(),
         new TwoMarkerToolbarItem(),
+        new CrossMarkerToolbarItem(),
         {
             name: "separator",
             tooltipText: "",

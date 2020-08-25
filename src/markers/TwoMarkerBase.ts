@@ -14,7 +14,7 @@ export class TwoMarkerBase extends TestangularMarkerBase {
     protected setup() {
         super.setup();
 
-        this.markerTwo = SvgHelper.createTwoNumber(this.d, [["transform", "translate(0.000000,500.000000) scale(0.0100000,-0.0100000)"],
+        this.markerTwo = SvgHelper.createTwoNumber(this.d, [["transform", "translate(0.000000,500.000000) scale(0.0050000,-0.0050000)"],
             ["fill", "#bc1414"], ["stroke", "none"]]);
         this.addToRenderVisual(this.markerTwo);
     }

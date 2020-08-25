@@ -1,4 +1,4 @@
-import { SvgHelper } from "./../helpers/SvgHelper";
+import { SvgHelper } from "../helpers/SvgHelper";
 import { LineMarkerBaseState } from "./LineMarkerBaseState";
 import { MarkerBase } from "./MarkerBase";
 import { ResizeGrip } from "./ResizeGrip";
